@@ -14,8 +14,15 @@ Hardware + Software + Tools ต่างๆที่ใช้ใน Project น�
 --------------------------------------------------------------------------------------------------------------------------------------
     • Hardware 
        1) Raspberry pi zero W
+         1.1) Female jumper line
+         1.2) MicroUSB
+         1.3) Monitor
+         1.4) Mini HDMI
+         1.5) MicroSD Card 
        2) DTMF Module
        3) AUX 3.5 mm 
+       4) SimonT
+      
     
     • software
        1) Visual Studio Code
@@ -33,5 +40,6 @@ Hardware + Software + Tools ต่างๆที่ใช้ใน Project น�
        4) JavaScript + (jQuery + Ajax) 
        5) SQLite
        
-ขั้นตอนการทำโปรเจค (ภาพรวม)
+Install
 -----------------------------------------------------------------------------------
+
