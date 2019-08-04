@@ -1,4 +1,4 @@
-# SimonT
+# SimonXT
 เป็นโปรเจคฝึกงานที่ทำร่วมกับบริษัท BlueSeas Enterprise Co., Ltd.
 
 ผมทำร่วมกับเพื่อน (frong gst) -> BackEnd
@@ -21,7 +21,7 @@ Hardware + Software + Tools ต่างๆที่ใช้ใน Project น�
          1.5) MicroSD Card 
        2) DTMF Module
        3) AUX 3.5 mm 
-       4) SimonT
+       4) SimonXT
       
     
     • software
