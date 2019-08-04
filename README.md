@@ -40,6 +40,5 @@ Hardware + Software + Tools ต่างๆที่ใช้ใน Project น�
        4) JavaScript + (jQuery & Ajax) 
        5) SQLite
        
-Install
------------------------------------------------------------------------------------
-
+    • Font
+       1) Kanit ( https://fonts.google.com/specimen/Kanit )
