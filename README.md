@@ -36,8 +36,8 @@ Hardware + Software + Tools ต่างๆที่ใช้ใน Project น�
     • language
        1) Python(BackEnd)
        2) HTML5
-       3) CSS3
-       4) JavaScript + (jQuery + Ajax) 
+       3) CSS3 & Bootstrap4
+       4) JavaScript + (jQuery & Ajax) 
        5) SQLite
        
 Install
