@@ -1,6 +1,8 @@
 # simonT
 เป็นโปรเจคฝึกงานที่ทำร่วมกับบริษัท BlueSeas Enterprise Co., Ltd.
+
 ผมทำร่วมกับเพื่อน (frong gst) -> BackEnd
+
 ส่วนผมทำ FrontEnd
 
 
