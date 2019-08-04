@@ -1,0 +1,689 @@
+@import url("https://fonts.googleapis.com/css?family=Kanit:300&display=swap&subset=thai");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  /* background-color: #F5F5F5; */
+  background-color: #ffffff !important;
+  font-family: "Kanit", sans-serif;
+}
+.container {
+  margin: 0 auto;
+}
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 1000px;
+}
+
+.container img {
+  width: 100%;
+  height: auto;
+}
+
+h2.title_name {
+  margin-top: 15px;
+  text-align: center;
+}
+p.detail_map {
+  text-align: center;
+}
+.container .card p {
+  font-size: 10px;
+  text-align: center;
+  color: aliceblue;
+  font-weight: bold;
+}
+/* -- จัดการ card แนวนอน -- */
+.container .col-md-1 .card {
+  position: absolute;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  /* transition: 0.3s;*/
+  border-radius: 5px;
+  width: 18px;
+  height: 18px;
+  text-align: center;
+  background-color: #2ecc71;
+  border-color: black;
+  font-size: 3px;
+  padding-top: 0px;
+  margin-top: 38px;
+  margin-left: 5px;
+}
+/* -- card hover แนวนอน -- */
+.col-md-1 .card:hover {
+  background-color: #186a3b;
+}
+
+.col-md-1 .card:active {
+  background-color: #186a3b;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+.col-md-1 .card {
+  cursor: pointer;
+  cursor: hand;
+}
+/* -- จัดการ card แนวตั้ง -- */
+.container .col .card {
+  position: absolute;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  /* transition: 0.3s;*/
+  border-radius: 5px;
+  width: 18px;
+  height: 18px;
+  text-align: center;
+  background-color: #2ecc71;
+  border-color: black;
+  font-size: 3px;
+  padding-top: 0px;
+  margin-top: 6px;
+  margin-left: 5px;
+}
+/* -- card hover แนวตั้ง-- */
+.col .card:hover {
+  background-color: #186a3b;
+}
+
+.col .card:active {
+  background-color: #186a3b;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+.col .card {
+  cursor: pointer;
+  cursor: hand;
+}
+
+/*-- กล่องใหญ่ 5-1 --*/
+.container #col-2-box1 {
+  position: absolute;
+  top: 59.6%;
+  left: 42.2%;
+  height: 60px;
+  transform: translate(-50%, -50%) rotate(-3.3deg);
+  /* background-color: none;
+  text-align: center; */
+}
+/* -- card ด้านในกล่อง 1-5 -- */
+.container .col-md-1,
+#card1,
+#card2,
+#card3,
+#card4,
+#card5 {
+  position: relative;
+  height: 55px;
+  /* align-items: center; */
+  padding: 0px;
+  margin-right: 10px;
+  margin-inline-start: initial;
+  margin-inline-end: 9px;
+}
+/* กล่องใหญ่ 6-13 */
+.container #col-3-box1 {
+  position: absolute;
+  top: 61%;
+  left: 25%;
+  height: 60px;
+  transform: translate(-50%, -50%) rotate(-3.3deg);
+  /* background-color: none;
+  text-align: center; */
+}
+/* -- card ด้านในกล่อง 6-13 -- */
+.container .col-md-1,
+#card6,
+#card7,
+#card8,
+#card9,
+#card10,
+#card11,
+#card12,
+#card13 {
+  position: relative;
+  height: 55px;
+  /* align-items: center; */
+  padding: 0px;
+  margin-right: 10px;
+  margin-inline-start: initial;
+  margin-inline-end: 2px;
+}
+
+/* กล่องใหญ่ 14-17 */
+.container #container-box2 {
+  position: absolute;
+  top: 42%;
+  left: 14.5%;
+  height: 100px;
+  width: 65px;
+  transform: translate(-50%, -50%) rotate(-3.3deg);
+  /* background-color: none;
+  text-align: center; */
+}
+/* -- card ด้านในกล่อง 14-17 -- */
+.container .col,
+#card17,
+#card16,
+#card15,
+#card14 {
+  position: relative;
+  height: 23px;
+  padding: 0px;
+  margin-right: 0px;
+  margin-inline-start: initial;
+  margin-inline-end: 5px;
+}
+/* กล่องใหญ่ 18-22 */
+.container #container1-box2 {
+  position: absolute;
+  top: 20.5%;
+  left: 13.8%;
+  height: 100px;
+  width: 65px;
+  transform: translate(-50%, -50%) rotate(-3.3deg);
+  /* background-color: none;
+  text-align: center; */
+}
+/* -- card ด้านในกล่อง 18-22 -- */
+.container .col,
+#card22,
+#card21,
+#card20,
+#card19,
+#card18 {
+  position: relative;
+  height: 23px;
+  padding: 0px;
+  margin-right: 0px;
+  margin-inline-start: initial;
+  margin-inline-end: 5px;
+}
+/* กล่องใหญ่ 23-29 */
+.container #container2-box2 {
+  position: absolute;
+  top: 19.5%;
+  left: 26%;
+  height: 100px;
+  width: 65px;
+  transform: translate(-50%, -50%) rotate(-3.3deg);
+  /* background-color: none;
+  text-align: center; */
+}
+/* -- card ด้านในกล่อง 23-29 -- */
+.container .col,
+#card23,
+#card24,
+#card25,
+#card26,
+#card27,
+#card28,
+#card29 {
+  position: relative;
+  height: 22.5px;
+  padding: 0px;
+  margin-right: 0px;
+  margin-inline-start: initial;
+  margin-inline-end: 1px;
+}
+/* กล่องใหญ่ 30-34 */
+.container #col-2-box2 {
+  position: absolute;
+  top: 43%;
+  left: 31.35%;
+  height: 60px;
+  transform: translate(-50%, -50%) rotate(-3.3deg);
+  /* background-color: none;
+  text-align: center; */
+}
+/* -- card ด้านในกล่อง 30-34 -- */
+.container .col-md-1,
+#card30,
+#card31,
+#card32,
+#card33,
+#card34 {
+  position: relative;
+  height: 55px;
+  /* align-items: center; */
+  padding: 0px;
+  margin-right: 10px;
+  margin-inline-start: initial;
+  margin-inline-end: 9px;
+}
+/* กล่องใหญ่ 35-40 */
+.container #container3-box2 {
+  position: absolute;
+  top: 20.6%;
+  left: 34%;
+  height: 100px;
+  width: 65px;
+  transform: translate(-50%, -50%) rotate(-3.3deg);
+  /* background-color: none;
+  text-align: center; */
+}
+/* -- card ด้านในกล่อง 35-40 -- */
+.container .col,
+#card35,
+#card36,
+#card37,
+#card38,
+#card39,
+#card40 {
+  position: relative;
+  height: 22.5px;
+  padding: 0px;
+  margin-right: 0px;
+  margin-inline-start: initial;
+  margin-inline-end: 1px;
+}
+/* กล่องใหญ่ 41-45 */
+.container #container4-box2 {
+  position: absolute;
+  top: 19.7%;
+  left: 46%;
+  height: 100px;
+  width: 65px;
+  transform: translate(-50%, -50%) rotate(-3.3deg);
+  /* background-color: none;
+  text-align: center; */
+}
+/* -- card ด้านในกล่อง 41-45 -- */
+.container .col,
+#card41,
+#card42,
+#card43,
+#card44,
+#card45 {
+  position: relative;
+  height: 22.5px;
+  padding: 0px;
+  margin-right: 0px;
+  margin-inline-start: initial;
+  margin-inline-end: 1px;
+}
+/* กล่องใหญ่ 46-50 */
+.container #container5-box2 {
+  position: absolute;
+  top: 20.5%;
+  left: 54.1%;
+  height: 100px;
+  width: 65px;
+  transform: translate(-50%, -50%) rotate(-2.5deg);
+  /* background-color: none;
+  text-align: center; */
+}
+/* -- card ด้านในกล่อง 46-50 -- */
+.container .col,
+#card46,
+#card47,
+#card48,
+#card49,
+#card50 {
+  position: relative;
+  height: 23px;
+  padding: 0px;
+  margin-right: 0px;
+  margin-inline-start: initial;
+  margin-inline-end: 1px;
+}
+/* กล่องใหญ่ 51-55 */
+.container #container6-box2 {
+  position: absolute;
+  top: 19.5%;
+  left: 66.2%;
+  height: 100px;
+  width: 65px;
+  transform: translate(-50%, -50%) rotate(-3deg);
+  /* background-color: none;
+  text-align: center; */
+}
+/* -- card ด้านในกล่อง 46-50 -- */
+.container .col,
+#card51,
+#card52,
+#card53,
+#card54,
+#card55 {
+  position: relative;
+  height: 22.5px;
+  padding: 0px;
+  margin-right: 0px;
+  margin-inline-start: initial;
+  margin-inline-end: 1px;
+}
+/* กล่องใหญ่ 56-60 */
+.container #container7-box2 {
+  position: absolute;
+  top: 20%;
+  left: 74.5%;
+  height: 100px;
+  width: 65px;
+  transform: translate(-50%, -50%) rotate(-3deg);
+  /* background-color: none;
+  text-align: center; */
+}
+/* -- card ด้านในกล่อง 56-60 -- */
+.container .col,
+#card56,
+#card57,
+#card58,
+#card59,
+#card60 {
+  position: relative;
+  height: 22.5px;
+  padding: 0px;
+  margin-right: 0px;
+  margin-inline-start: initial;
+  margin-inline-end: 1px;
+}
+/* กล่องใหญ่ 61-65 */
+.container #container8-box2 {
+  position: absolute;
+  top: 19.5%;
+  left: 86%;
+  height: 100px;
+  width: 65px;
+  transform: translate(-50%, -50%) rotate(-3deg);
+  /* background-color: none;
+  text-align: center; */
+}
+/* -- card ด้านในกล่อง 61-65 -- */
+.container .col,
+#card61,
+#card62,
+#card63,
+#card64,
+#card65 {
+  position: relative;
+  height: 23px;
+  padding: 0px;
+  margin-right: 0px;
+  margin-inline-start: initial;
+  margin-inline-end: 1px;
+}
+
+/*popup*/
+#popupBoxOnePosition {
+  top: 0;
+  left: 0;
+  position: fixed;
+  width: 100%;
+  height: 120%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: none;
+}
+.popupBoxWrapper {
+  width: 550px;
+  margin: 50px auto;
+  text-align: left;
+}
+
+.popupBoxContent {
+  background-color: #fff;
+  /* padding: 15px; */
+  /* border-radius: 10px; */
+  border-radius: 0.3em 0.3em 0.3em 0.3em;
+  /* height: 15em; */
+  min-height: 15em;
+  position: relative;
+}
+.allButton {
+  margin-top: 12px;
+  margin-right: 5px;
+  text-align: right;
+  float: right;
+}
+
+#btnSave,
+#btnAdd,
+#btnForm,
+#btnAddHouse {
+  /* margin-right: 20%;
+  padding: 5px 20px;
+  border: 1px solid #9bd2b1;
+  border-radius: 5px;
+  margin-bottom: 10px; */
+  /* background-color: #2aa2fe;
+  color: #ffffff; */
+  /* cursor: pointer; */
+  /* margin-top: -46%; */
+  /* position: absolute;
+  top: 3%; */
+  background-color: #2aa2fe;
+  color: #ffffff;
+  border: none;
+  height: 31px;
+}
+#btnSave:hover,
+#btnForm:hover,
+#btnAdd:hover,
+#btnAddHouse:hover {
+  background-color: #2a85fe;
+}
+
+#btnIgnoreAlert:hover,
+#btnCancel:hover,
+#btnClose:hover {
+  background-color: #bdbdbd;
+}
+#btnCancel,
+#btnIgnoreAlert,
+#btnClose {
+  /* padding: 5px 20px;
+  border: 1px solid #d6d6d6;
+  border-radius: 5px;
+  margin-bottom: 10px; */
+  background-color: #f4f4f4;
+  color: #000000;
+  cursor: pointer;
+  border: none;
+  height: 31px;
+}
+
+/* #btnForm {
+  /* margin-right: 10px; */
+/* padding: 5px 20px; */
+/* border: 1px solid #9bd2b1; */
+/* border-radius: 5px; */
+/* margin-bottom: 10px; 
+  background-color: #2aa2fe;
+  color: #ffffff;
+  cursor: pointer;
+  border: none;
+} */
+
+/* #btnForm:hover {
+  background-color: #2a85fe;
+} */
+
+/* #btnProfile{
+  margin-right: 10px;
+  padding: 5px 20px;
+  border: 1px solid #9BD2B1;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  background-color: #2AA2FE;
+  color:#ffffff;
+  cursor: pointer;
+}
+#btnProfile:hover{
+  background-color: #2a85fe;
+} */
+
+/* #btnAdd {
+ 
+} */
+/* #btnSave {
+  border: none;
+} */
+
+/* #btnIgnoreAlert {
+  background-color: #f4f4f4;
+  color: #000000;
+  height: 31px;
+  border: none;
+  cursor: pointer;
+} */
+
+/* #btnCancel:hover {
+  background-color: #bdbdbd;
+} */
+/* #btnClose {
+  /* padding: 5px 20px; */
+/* border: 1px solid #d6d6d6; */
+/* border-radius: 5px; */
+/* margin-bottom: 10px; 
+  background-color: #f4f4f4;
+  color: #000000;
+  cursor: pointer; 
+} */
+/* #btnClose:hover {
+  background-color: #bdbdbd;
+} */
+
+/* #btnAdd:hover {
+  background-color: #2a85fe;
+} */
+/* #btnAddHouse {
+  margin-right: 10px;
+  padding: 5px 20px;
+  border: 1px solid #9bd2b1;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  background-color: #2aa2fe;
+  color: #ffffff;
+  cursor: pointer;
+} */
+/* #btnAddHouse:hover {
+  background-color: #2a85fe;
+} */
+/* #boxStatus{
+} */
+img.avatar {
+  /* padding: 0em; */
+  float: left;
+  margin-left: 1.5em;
+  margin-top: 0.8em;
+  height: 9.5em;
+  width: 9.5em;
+  border-radius: 18em;
+}
+.allData {
+  float: left;
+  margin-top: 0.6em !important; /*ทำให้ภาพกับตัวอักษรตรงกัน*/
+  margin-left: 50px;
+  color: #658585;
+  font-size: 1.53em;
+}
+.topPopup {
+  margin-top: 0;
+  height: 3.7em;
+  background-color: #82c9ef;
+  text-align: center;
+  border-radius: 0.3em 0.3em 0 0;
+  border-color: #82c9ef;
+  border-style: solid;
+}
+#House_Numbers {
+  margin-top: 10px;
+  text-align: left;
+  margin-left: 10px;
+  color: #000000;
+  font-size: 1.53em;
+  font-weight: bold;
+}
+
+#boxProfile,
+#boxEditForm {
+  margin-top: 10%;
+}
+/* #boxEditForm {
+  margin-top: 10%;
+} */
+.form-group {
+  margin-top: -6.5% !important;
+  margin-top: 0%;
+  padding: 5%;
+  padding-top: 5px;
+  padding-left: 35%;
+}
+
+#profilePic {
+  float: left;
+  /* margin-top: 0em; */
+  margin-left: 1.5em;
+  margin-top: 0em;
+  height: 9.5em;
+  width: 9.5em;
+  border-radius: 18em;
+}
+#profilePicAdd {
+  float: left;
+  margin-top: 5% !important;
+  margin-left: 1.5em;
+  height: 9.5em;
+  width: 9.5em;
+  border-radius: 18em;
+}
+#boxAddHouse {
+  margin-top: 7%;
+}
+.form-groupAdd {
+  margin-top: -4% !important;
+  margin-top: 0%;
+  padding: 5%;
+  padding-top: 5px;
+  padding-left: 35%;
+}
+.alarmClass .card {
+  -webkit-animation: BLINK-STATUS 1s infinite; /* Safari 4+ */
+  -moz-animation: BLINK-STATUS 1s infinite; /* Fx 5+ */
+  -o-animation: BLINK-STATUS 1s infinite; /* Opera 12+ */
+  animation: BLINK-STATUS 1s infinite; /* IE 10+, Fx 29+ */
+}
+.alarmClass .card:hover {
+  background-color: #800517 !important;
+}
+
+@-webkit-keyframes BLINK-STATUS {
+  0%,
+  49% {
+    background-color: red;
+  }
+  50%,
+  100% {
+    background-color: #2ecc71;
+  }
+}
+
+#loading {
+  position: fixed;
+  background: white;
+  transform: translate(40%, 35%);
+  width: 100%;
+  height: 100vh;
+  background-image: url("images/Ellipsis-1s-200px.gif");
+  display: none;
+  background-repeat: no-repeat;
+}
+.showContent {
+  display: block !important;
+}
+.hideContent {
+  display: none;
+}
+.jq-toast-wrap {
+  position: absolute !important;
+}
+#headerButton button {
+  margin-right: 10px;
+  float: right;
+}
+
+/* #headerButton .btnIgNore {
+  background: #e9ecef;
+  border-color: #e9ecef !important;
+  color: grey;
+} */

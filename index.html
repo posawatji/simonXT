@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Kanit:300&display=swap&subset=thai" rel="stylesheet">
+    <!-- css toast jquery -->
+    <link rel="stylesheet" href="./plugins/jquery-toast-plugin-master/jquery.toast.min.css">
+
+    <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"> -->
+    <title>Button on Image</title>
+</head>
+
+<body>
+
+
+    <!--จัดให้อยู่ใน container ทั้งหมด-->
+    <div id="sound"></div>
+    <div id="loading"></div>
+    <div id="content" class="container hideContent">
+        <!-- <button onclick="showToast('Toast text')">Show Toast</button> -->
+        <!-- <div id="toast"></div> -->
+
+
+        <!--ชื่อแผนผังหมู่บ้านจัดสรร-->
+        <h2 class="title_name">Village map</h2>
+        <!--คำอธิบาย-->
+        <p class="detail_map">detail map:</p>
+        <!--จัดให้อยู่ใน container ภายในรูป-->
+        <div class="container">
+
+            <!--กล่อง 13 ถึง 6 ซ้ายล่าง-->
+            <div class="col-3" id="col-3-box1">
+                <div class="row">
+                    <!--กล่อง 13-->
+                    <div class="col-md-1" id="card13" onclick="getDetailHome('13');">
+                        <div class="card">
+                            <p class="card-title">13</p>
+                        </div>
+                    </div>
+                    <!--กล่อง 12-->
+                    <div class="col-md-1" id="card12" onclick="getDetailHome('12');">
+                        <div class="card">
+                            <p class="card-title">12</p>
+
+                        </div>
+                    </div>
+                    <!--กล่อง 11-->
+                    <div class="col-md-1" id="card11" onclick="getDetailHome('11');">
+                        <div class="card">
+                            <p class="card-title">11</p>
+
+                        </div>
+                    </div>
+                    <!--กล่อง 10-->
+                    <div class="col-md-1" id="card10" onclick="getDetailHome('10');">
+                        <div class="card">
+                            <p class="card-title">10</p>
+
+                        </div>
+                    </div>
+                    <!--กล่อง 9-->
+                    <div class="col-md-1" id="card9" onclick="getDetailHome('9');">
+                        <div class="card">
+                            <p class="card-title">9</p>
+
+                        </div>
+                    </div>
+                    <!--กล่อง 8-->
+                    <div class="col-md-1" id="card8" onclick="getDetailHome('8');">
+                        <div class="card">
+                            <p class="card-title">8</p>
+
+                        </div>
+                    </div>
+                    <!--กล่อง 7-->
+                    <div class="col-md-1" id="card7" onclick="getDetailHome('7');">
+                        <div class="card">
+                            <p class="card-title">7</p>
+
+                        </div>
+                    </div>
+                    <!--กล่อง 6-->
+                    <div class="col-md-1" id="card6" onclick="getDetailHome('6');">
+                        <div class="card">
+                            <p class="card-title">6</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--กล่อง 5 ถึง 1 ขวาล่าง-->
+            <div class="col-2" id="col-2-box1">
+                <div class="row">
+                    <!--กล่อง 5-->
+                    <div class="col-md-1" id="card5" onclick="getDetailHome('5')">
+                        <div class="card">
+                            <p class="card-title">5</p>
+                        </div>
+                    </div>
+                    <!--กล่อง 4-->
+                    <div class="col-md-1" id="card4" onclick="getDetailHome('4');">
+                        <div class="card">
+                            <p class="card-title">4</p>
+                        </div>
+                    </div>
+                    <!--กล่อง 3-->
+                    <div class="col-md-1" id="card3" onclick="getDetailHome('3');">
+                        <div class="card">
+                            <p class="card-title">3</p>
+                        </div>
+                    </div>
+                    <!--กล่อง 2-->
+                    <div class="col-md-1" id="card2" onclick="getDetailHome('2');">
+                        <div class="card">
+                            <p class="card-title">2</p>
+                        </div>
+                    </div>
+                    <!--กล่อง 1-->
+                    <div class="col-md-1" id="card1" onclick="getDetailHome('1');">
+                        <div class="card">
+                            <p class="card-title">1</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--กล่อง 17 ถึง 14-->
+            <div class="container" id="container-box2">
+                <div class="row">
+                    <!--กล่อง 17-->
+                    <div class="col" id="card17" onclick="getDetailHome('17')">
+                        <div class="card">
+                            <p class="card-title">17</p>
+                        </div>
+                    </div>
+                    <div class="w-100"></div>
+                    <!--กล่อง 16-->
+                    <div class="col" id="card16" onclick="getDetailHome('16')">
+                        <div class="card">
+                            <p class="card-title">16</p>
+                        </div>
+                    </div>
+                    <div class="w-100"></div>
+                    <!--กล่อง 15-->
+                    <div class="col" id="card15" onclick="getDetailHome('15')">
+                        <div class="card">
+                            <p class="card-title">15</p>
+                        </div>
+                    </div>
+                    <div class="w-100"></div>
+                    <!--กล่อง 14-->
+                    <div class="col" id="card14" onclick="getDetailHome('14')">
+                        <div class="card">
+                            <p class="card-title">14</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--กล่อง 22 ถึง 18-->
+            <div class="container" id="container1-box2">
+                <div class="row">
+                    <!--กล่อง 22-->
+                    <div class="col" id="card22" onclick="getDetailHome('22')">
+                        <div class="card">
+                            <p class="card-title">22</p>
+                        </div>
+                    </div>
+                    <div class="w-100"></div>
+                    <!--กล่อง 21-->
+                    <div class="col" id="card21" onclick="getDetailHome('21')">
+                        <div class="card">
+                            <p class="card-title">21</p>
+                        </div>
+                    </div>
+                    <div class="w-100"></div>
+                    <!--กล่อง 20-->
+                    <div class="col" id="card20" onclick="getDetailHome('20')">
+                        <div class="card">
+                            <p class="card-title">20</p>
+                        </div>
+                    </div>
+                    <div class="w-100"></div>
+                    <!--กล่อง 19-->
+                    <div class="col" id="card19" onclick="getDetailHome('19')">
+                        <div class="card">
+                            <p class="card-title">19</p>
+                        </div>
+                    </div>
+                    <div class="w-100"></div>
+                    <!--กล่อง 18-->
+                    <div class="col" id="card18" onclick="getDetailHome('18')">
+                        <div class="card">
+                            <p class="card-title">18</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--กล่อง 23 ถึง 29-->
+            <div class="container" id="container2-box2">
+                <div class="row">
+                    <!--กล่อง 23-->
+                    <div class="col" id="card23" onclick="getDetailHome('23')">
+                        <div class="card">
+                            <p class="card-title">23</p>
+                        </div>
+                    </div>
+                    <div class="w-100"></div>
+                    <!--กล่อง 24-->
+                    <div class="col" id="card24" onclick="getDetailHome('24')">
+                        <div class="card">
+                            <p class="card-title">24</p>
+                        </div>
+                    </div>
+                    <div class="w-100"></div>
+                    <!--กล่อง 25-->
+                    <div class="col" id="card25" onclick="getDetailHome('25')">
+                        <div class="card">
+                            <p class="card-title">25</p>
+                        </div>
+                    </div>
+                    <div class="w-100"></div>
+                    <!--กล่อง 26-->
+                    <div class="col" id="card26" onclick="getDetailHome('26')">
+                        <div class="card">
+                            <p class="card-title">26</p>
+                        </div>
+                    </div>
+                    <div class="w-100"></div>
+                    <!--กล่อง 27-->
+                    <div class="col" id="card27" onclick="getDetailHome('27')">
+                        <div class="card">
+                            <p class="card-title">27</p>
+                        </div>
+                    </div>
+                    <div class="w-100"></div>
+                    <!--กล่อง 28-->
+                    <div class="col" id="card28" onclick="getDetailHome('28')">
+                        <div class="card">
+                            <p class="card-title">28</p>
+                        </div>
+                    </div>
+                    <div class="w-100"></div>
+                    <!--กล่อง 29-->
+                    <div class="col" id="card29" onclick="getDetailHome('29')">
+                        <div class="card">
+                            <p class="card-title">29</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--กล่อง 30 ถึง 34 ขวาล่าง-->
+            <div class="col-2" id="col-2-box2">
+                <div class="row">
+                    <!--กล่อง 30-->
+                    <div class="col-md-1" id="card30" onclick="getDetailHome('30')">
+                        <div class="card">
+                            <p class="card-title">30</p>
+                        </div>
+                    </div>
+                    <!--กล่อง 31-->
+                    <div class="col-md-1" id="card31" onclick="getDetailHome('31')">
+                        <div class="card">
+                            <p class="card-title">31</p>
+                        </div>
+                    </div>
+                    <!--กล่อง 32-->
+                    <div class="col-md-1" id="card32" onclick="getDetailHome('32')">
+                        <div class="card">
+                            <p class="card-title">32</p>
+                        </div>
+                    </div>
+                    <!--กล่อง 33-->
+                    <div class="col-md-1" id="card33" onclick="getDetailHome('33')">
+                        <div class="card">
+                            <p class="card-title">33</p>
+                        </div>
+                    </div>
+                    <!--กล่อง 34-->
+                    <div class="col-md-1" id="card34" onclick="getDetailHome('34')">
+                        <div class="card">
+                            <p class="card-title">34</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--กล่อง 40 ถึง 35-->
+            <div class="container" id="container3-box2">
+                <div class="row">
+                    <!--กล่อง40 -->
+                    <div class="col" id="card40" onclick="getDetailHome('40')">
+                        <div class="card">
+                            <p class="card-title">40</p>
+                        </div>
+                    </div>
+                    <div class="w-100"></div>
+                    <!--กล่อง 39-->
+                    <div class="col" id="card39" onclick="getDetailHome('39')">
+                        <div class="card">
+                            <p class="card-title">39</p>
+                        </div>
+                    </div>
+                    <div class="w-100"></div>
+                    <!--กล่อง 38-->
+                    <div class="col" id="card38" onclick="getDetailHome('38')">
+                        <div class="card">
+                            <p class="card-title">38</p>
+                        </div>
+                    </div>
+                    <div class="w-100"></div>
+                    <!--กล่อง 37-->
+                    <div class="col" id="card37" onclick="getDetailHome('37')">
+                        <div class="card">
+                            <p class="card-title">37</p>
+                        </div>
+                    </div>
+                    <div class="w-100"></div>
+                    <!--กล่อง 36-->
+                    <div class="col" id="card36" onclick="getDetailHome('36')">
+                        <div class="card">
+                            <p class="card-title">36</p>
+                        </div>
+                    </div>
+                    <div class="w-100"></div>
+                    <!--กล่อง 35-->
+                    <div class="col" id="card35" onclick="getDetailHome('35')">
+                        <div class="card">
+                            <p class="card-title">35</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!--กล่อง 41 ถึง 45-->
+            <div class="container" id="container4-box2">
+                <div class="row">
+                    <!--กล่อง 41 -->
+                    <div class="col" id="card41" onclick="getDetailHome('41')">
+                        <div class="card">
+                            <p class="card-title">41</p>
+                        </div>
+                    </div>
+                    <div class="w-100"></div>
+                    <!--กล่อง 42-->
+                    <div class="col" id="card42" onclick="getDetailHome('42')">
+                        <div class="card">
+                            <p class="card-title">42</p>
+                        </div>
+                    </div>
+                    <div class="w-100"></div>
+                    <!--กล่อง 43-->
+                    <div class="col" id="card43" onclick="getDetailHome('43')">
+                        <div class="card">
+                            <p class="card-title">43</p>
+                        </div>
+                    </div>
+                    <div class="w-100"></div>
+                    <!--กล่อง 44-->
+                    <div class="col" id="card44" onclick="getDetailHome('44')">
+                        <div class="card">
+                            <p class="card-title">44</p>
+                        </div>
+                    </div>
+                    <div class="w-100"></div>
+                    <!--กล่อง 45-->
+                    <div class="col" id="card45" onclick="getDetailHome('45')">
+                        <div class="card">
+                            <p class="card-title">45</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!--กล่อง 50 ถึง 46-->
+            <div class="container" id="container5-box2">
+                <div class="row">
+                    <!--กล่อง 50 -->
+                    <div class="col" id="card50" onclick="getDetailHome('50')">
+                        <div class="card">
+                            <p class="card-title">50</p>
+                        </div>
+                    </div>
+                    <div class="w-100"></div>
+                    <!--กล่อง 49-->
+                    <div class="col" id="card49" onclick="getDetailHome('49')">
+                        <div class="card">
+                            <p class="card-title">49</p>
+                        </div>
+                    </div>
+                    <div class="w-100"></div>
+                    <!--กล่อง 48-->
+                    <div class="col" id="card48" onclick="getDetailHome('48')">
+                        <div class="card">
+                            <p class="card-title">48</p>
+                        </div>
+                    </div>
+                    <div class="w-100"></div>
+                    <!--กล่อง 47-->
+                    <div class="col" id="card47" onclick="getDetailHome('47')">
+                        <div class="card">
+                            <p class="card-title">47</p>
+                        </div>
+                    </div>
+                    <div class="w-100"></div>
+                    <!--กล่อง 46-->
+                    <div class="col" id="card46" onclick="getDetailHome('46')">
+                        <div class="card">
+                            <p class="card-title">46</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <!--กล่อง 51 ถึง 55-->
+            <div class="container" id="container6-box2">
+                <div class="row">
+                    <!--กล่อง 51 -->
+                    <div class="col" id="card51" onclick="getDetailHome('51')">
+                        <div class="card">
+                            <p class="card-title">51</p>
+                        </div>
+                    </div>
+                    <div class="w-100"></div>
+                    <!--กล่อง 52-->
+                    <div class="col" id="card52" onclick="getDetailHome('52')">
+                        <div class="card">
+                            <p class="card-title">52</p>
+                        </div>
+                    </div>
+                    <div class="w-100"></div>
+                    <!--กล่อง 53-->
+                    <div class="col" id="card53" onclick="getDetailHome('53')">
+                        <div class="card">
+                            <p class="card-title">53</p>
+                        </div>
+                    </div>
+                    <div class="w-100"></div>
+                    <!--กล่อง 54-->
+                    <div class="col" id="card54" onclick="getDetailHome('54')">
+                        <div class="card">
+                            <p class="card-title">54</p>
+                        </div>
+                    </div>
+                    <div class="w-100"></div>
+                    <!--กล่อง 55-->
+                    <div class="col" id="card55" onclick="getDetailHome('55')">
+                        <div class="card">
+                            <p class="card-title">55</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!--กล่อง 60 ถึง 56-->
+            <div class="container" id="container7-box2">
+                <div class="row">
+                    <!--กล่อง 60 -->
+                    <div class="col" id="card60" onclick="getDetailHome('60')">
+                        <div class="card">
+                            <p class="card-title">60</p>
+                        </div>
+                    </div>
+                    <div class="w-100"></div>
+                    <!--กล่อง 59-->
+                    <div class="col" id="card59" onclick="getDetailHome('59')">
+                        <div class="card">
+                            <p class="card-title">59</p>
+                        </div>
+                    </div>
+                    <div class="w-100"></div>
+                    <!--กล่อง 58-->
+                    <div class="col" id="card58" onclick="getDetailHome('58')">
+                        <div class="card">
+                            <p class="card-title">58</p>
+                        </div>
+                    </div>
+                    <div class="w-100"></div>
+                    <!--กล่อง 57-->
+                    <div class="col" id="card57" onclick="getDetailHome('57')">
+                        <div class="card">
+                            <p class="card-title">57</p>
+                        </div>
+                    </div>
+                    <div class="w-100"></div>
+                    <!--กล่อง 56-->
+                    <div class="col" id="card56" onclick="getDetailHome('56')">
+                        <div class="card">
+                            <p class="card-title">56</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <!--กล่อง 61 ถึง 65-->
+            <div class="container" id="container8-box2">
+                <div class="row">
+                    <!--กล่อง 61 -->
+                    <div class="col" id="card61" onclick="getDetailHome('61')">
+                        <div class="card">
+                            <p class="card-title">61</p>
+                        </div>
+                    </div>
+                    <div class="w-100"></div>
+                    <!--กล่อง 62-->
+                    <div class="col" id="card62" onclick="getDetailHome('62')">
+                        <div class="card">
+                            <p class="card-title">62</p>
+                        </div>
+                    </div>
+                    <div class="w-100"></div>
+                    <!--กล่อง 63-->
+                    <div class="col" id="card63" onclick="getDetailHome('63')">
+                        <div class="card">
+                            <p class="card-title">63</p>
+                        </div>
+                    </div>
+                    <div class="w-100"></div>
+                    <!--กล่อง 64-->
+                    <div class="col" id="card64" onclick="getDetailHome('64')">
+                        <div class="card">
+                            <p class="card-title">64</p>
+                        </div>
+                    </div>
+                    <div class="w-100"></div>
+                    <!--กล่อง 65-->
+                    <div class="col" id="card65" onclick="getDetailHome('65')">
+                        <div class="card">
+                            <p class="card-title">65</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- card popup while onclick -->
+            <!-- ทำให้เด่นจาก background -->
+            <div id="popupBoxOnePosition">
+
+                <!-- กรอบนอกสุด popup -->
+                <div class="popupBoxWrapper">
+
+
+                    <div class="popupBoxContent">
+
+                        <div class="topPopup">
+                            <div id="headerButton" class="allButton">
+                                <button id="btnClose" onclick="toggle_close('popupBoxOnePosition')"
+                                    class="btn btn-default btn-sm">ปิดหน้าต่าง</button>
+                                <button id="btnForm" onclick="toggle_form()"
+                                    class="btn btn-warning btn-sm">แก้ไขข้อมูล</button>
+                                <button id="btnIgnoreAlert" style="display: none"
+                                    class="btnIgNore btn btn-secondary btn-sm"
+                                    onclick="toggle_IgnoreAlert();">ปิดการแจ้งเตือน</button>
+
+                                <button id="btnCancel" style="display: block" onclick="toggle_Cancel();"
+                                    class="btn btn-default btn-sm">ยกเลิก</button>
+
+                                <button id="btnAddHouse" onclick="toggle_Add();" style="display: none"
+                                    class="btn btn-primary btn-sm">
+                                    เพิ่มข้อมูล
+                                </button>
+                                <button id="btnUpdate" onclick="updateForm()" type="button"
+                                    class="btn btn-primary btn-sm" style="display: none">
+                                    บันทึก
+                                </button>
+                                <button id="btnAdd" onclick="addDetail(this)" type="button"
+                                    class="btn btn-primary btn-sm" style="display: none">บันทึก</button>
+                            </div>
+                            <div id="House_Numbers"></div>
+
+                        </div>
+
+
+                        <div id="boxStatus" class="text">
+                            <img class="avatar" src="./images/user.png" alt="Ash" />
+                            <div class="allData">
+                                <h5 id="Status"></h5>
+                                <h5 id="Detail"></h5>
+                                <h6><br></h6>
+                                <h5 id="profile_owner"></h5>
+                                <h5 id="profile_tel"></h5>
+                            </div>
+                        </div>
+
+                        <form id="boxEditForm" class="editform" style="display: none;">
+                            <input type="hidden" id="House_ID">
+                            <input type="hidden" id="StatusId">
+                            <img id="profilePic" src="./images/user.png" alt="profile">
+                            <!-- <img src="" height="200" alt="./images/user.png"> -->
+                            <div class="form-group">
+                                <input type="file" class="form-control" id="ProfileImage" aria-describedby="emailHelp">
+                            </div>
+
+                            <div class="form-group">
+                                <!-- <label for="Owner">Owner</label> -->
+                                <input type="text" class="form-control" id="Owner" placeholder="เจ้าของบ้าน">
+                                <!-- <span><i class="fas fa-user-edit"></i></span> -->
+                            </div>
+
+                            <div class="form-group">
+                                <!-- <label for="Tel">TEL</label> -->
+                                <input type="text" class="form-control" id="Tel" placeholder="เบอร์โทรติดต่อ">
+                            </div>
+
+                        </form>
+
+                        <form id="boxAddHouse" method="post" class="editform" style="display: none;">
+
+                            <img id="profilePicAdd" src="./images/user.png" alt="profile">
+                            <div class="form-groupAdd">
+                                <input type="file" class="form-control" id="ProfileImageAdd">
+                            </div>
+                            <div class="form-groupAdd">
+                                <!-- <label for="HouseNo">House Number</label> -->
+                                <input type="text" class="form-control" id="HouseNoAdd" aria-describedby="emailHelp"
+                                    placeholder="เลขหมายบ้าน">
+
+                            </div>
+                            <div class="form-groupAdd">
+                                <!-- <label for="Owner">Owner</label> -->
+                                <input type="text" class="form-control" id="OwnerAdd" placeholder="เจ้าของบ้าน">
+                                <!-- <span><i class="fas fa-user-edit"></i></span> -->
+                            </div>
+
+                            <div class="form-groupAdd">
+                                <!-- <label for="Tel">TEL</label> -->
+                                <input type="text" class="form-control" id="TelAdd" placeholder="เบอร์โทรติดต่อ">
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <img src="./images/GDT@ST-4-1.jpg" alt="Snow" style="width:100%">
+
+
+        </div>
+
+
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"></script>
+        <!-- Toast jquery -->
+        <script src="./plugins/jquery-toast-plugin-master/jquery.toast.min.js"></script>
+        <script src="main.js"></script>
+
+
+
+</body>
+
+</html>
