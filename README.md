@@ -25,7 +25,7 @@ Hardware + Software + Tools ต่างๆที่ใช้ใน Project น�
     • tools
        1) Node-RED API
        2) Toast Plugin by kamranahmedse ( https://github.com/kamranahmedse/jquery-toast-plugin/ )
-       3) 
+       
     • language
        1) Python(BackEnd)
        2) HTML5
